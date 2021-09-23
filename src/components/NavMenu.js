@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Styled from 'styled-components';
+import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 /* CSS style "styled.div" the dot (.) let us enter to the 'div' and replace the 'div' with 'NavMenuStyles' */
-const NavStyles = Styled.div`
-position: fixed;
-z-index: 100;
-top: 0;
-left: 0;
-width: 100%;
-padding: 1rem 0;
-background: var(--dark-bg);
+const NavStyles = styled.div`
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: var(--dark-bg);
 
   ul {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
-    li{
+    li {
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
@@ -26,20 +26,20 @@ background: var(--dark-bg);
         background-color: var(--deep-dark);
       }
     }
-    a{
+    a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--grey-1);
+      color: var(--gray-1);
       outline: none;
-      }
+    }
 
-    .active{
+    .active {
       color: var(--white);
     }
   }
-  .mobile-menu-icon{
+  .mobile-menu-icon {
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -51,20 +51,20 @@ background: var(--dark-bg);
       pointer-events: none;
     }
   }
-  .navItems .closeNavIcon{
+  .navItems .closeNavIcon {
     display: none;
   }
   /* means the there is a screen more than 768px the mobile-menu-icon will be cancelled 
   (i dont want to see it on desktops, only phones) */
-  @media only screen and (max-width: 768px){
-    padding:0;
-    .hide-item{
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+    .hide-item {
       transform: translateY(calc(-100% - var(--top)));
     }
-    .mobile-menu-icon{
+    .mobile-menu-icon {
       display: block;
     }
-    .navItems{
+    .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
       background-color: var(--deep-dark);
@@ -75,7 +75,7 @@ background: var(--dark-bg);
       position: absolute;
       right: 1rem;
       top: var(--top);
-      .closeNavIcon{
+      .closeNavIcon {
         display: block;
         width: 3rem;
         margin: 0 0 0 auto;
@@ -84,7 +84,7 @@ background: var(--dark-bg);
           pointer-events: none;
         }
       }
-      li{
+      li {
         display: block;
         margin-bottom: 1rem;
       }

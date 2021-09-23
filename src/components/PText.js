@@ -1,7 +1,7 @@
 import React from 'react';
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-const PStyle = Styled.div`
+const PStyle = styled.div`
   max-width: 500px;
   margin: 0 auto;
   font-size: 1.8rem;
@@ -11,10 +11,10 @@ const PStyle = Styled.div`
   }
 `;
 
-export default function PText() {
+export default function PText({ children }) {
   return (
     <PStyle>
-      <p> This is a paragraph</p>
+      <p>{children}</p>
     </PStyle>
   );
 }
