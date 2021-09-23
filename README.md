@@ -2,9 +2,9 @@
 
 ## Live Preview: [Open Link][preview]
 
-Coded by - [Daniel Slobodscoy] [web](http://my-website.com)
+Coded by - [Daniel Slobodscoy] [web](http://www.daslo.me/)
 
-![](./ReadMeImages/ReadMeBanner.png)
+![](./ReadMeImages/under_construction.png)
 
 ## Project Details
 
