@@ -85,7 +85,7 @@ const HeroStyle = styled.div`
       a {
         display: inline-block;
         font-size: 1.6rem;
-        letter-spacing: 5px;
+        letter-spacing: 2px; //can be 5px
         margin-bottom: 2rem;
         /* transform: rotate(-90deg); */
       }
@@ -94,6 +94,51 @@ const HeroStyle = styled.div`
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
+    }
+    .hero-heading {
+      font-size: 1.4rem;
+      margin-bottom: -3rem;
+      .hero-name {
+        font-size: 4.5rem;
+      }
+    }
+    .hero-img {
+      height: 300px;
+    }
+    .hero-info {
+      margin-top: 3rem;
+    }
+    .hero-social {
+      left: 0px;
+      bottom: -15%;
+      width: 20px;
+      .hero-social-indicator {
+        width: 15px;
+        p {
+          font-size: 1.2rem;
+        }
+        img {
+          max-width: 22px;
+        }
+      }
+      .hero-social-text {
+        ul {
+          li {
+            a {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .hero-scrollDown {
+      right: 0;
+      width: 20px;
+      gap: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
     }
   }
 `;
