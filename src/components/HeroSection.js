@@ -47,7 +47,7 @@ const HeroStyle = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
+    bottom: -15px; //changed from 20px to -15px
     width: 50px;
   }
   .hero-social {
@@ -159,12 +159,7 @@ export default function HeroSection() {
             <PText>
               Currently Daniel works as a Risk Management & Internal Audit
               Consultant at KPMG. Daniel is a Full Stack Web Developer
-              complimented by a background in Hospitality & Logistics. Daniel
-              managed teams and projects from his time as Operational Manager
-              and Managing Director in the past 6 years. Known as a logical
-              problem-solver, team player and passionate to learn the latest
-              cutting-edge technologies. He aims to further develop his skill
-              set, and to continue to grow and collaborate in the tech industry.
+              complimented by a background in Hospitality & Logistics.
             </PText>
             <Button btnLink="/projects" btnText="see my work" />
           </div>
